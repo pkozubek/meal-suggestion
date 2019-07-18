@@ -1,10 +1,11 @@
 import React from "react";
-import Meal from "./containers/Meal";
+
+import Main from "./containers/Main";
 
 function App() {
   return (
     <div className="App">
-      <Meal />
+      <Main />
     </div>
   );
 }

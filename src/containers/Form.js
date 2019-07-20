@@ -9,10 +9,16 @@ import Input from "../components/UI/input";
 import * as global from "../globalConst/globalConst";
 
 const StyledForm = styled.div`
-  border: 1px solid black;
+  box-shadow: 0 0 10px gray;
+  background: ghostwhite;
   width: 40%;
   margin: 25px auto;
   padding: 25px;
+  border-radius: 4px;
+
+  @media (max-width: 1027px) {
+    width: 60%;
+  }
 `;
 
 class Form extends Component {

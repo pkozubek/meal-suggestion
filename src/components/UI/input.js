@@ -3,9 +3,22 @@ import styled from "styled-components";
 
 const StyledInput = styled.input`
   display: block;
-  margin: 10px auto;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  font-size: 1.6em;
+  width: 60%;
   padding: 5px;
-  border: 1px solid blue;
+  border: none;
+  border-bottom: 1px solid blue;
+  box-shadow: none;
+  background: none;
+  font-family: "Indie Flower", cursive;
+  color: blue;
+  text-align: center;
+
+  @media (max-width: 1027px) {
+    width: 80%;
+  }
 `;
 
 const input = props => {

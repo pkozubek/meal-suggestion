@@ -15,7 +15,7 @@ class Main extends Component {
   };
 
   loadMeals = () => {
-    api.getMeal(["onion", "egg"]).then(dataTab => {
+    api.getMeal(this.state.ingredientsAdded).then(dataTab => {
       this.setState({
         suggestedMeals: dataTab
       });

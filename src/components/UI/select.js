@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledSelect = styled.select`
   padding: 5px;
-  border: 1px solid blue;
+  border: 1px solid gray;
   width: 150px;
   height: 30px;
   border-radius: 8px;

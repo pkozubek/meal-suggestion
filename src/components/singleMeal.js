@@ -3,16 +3,28 @@ import styled from "styled-components";
 import Ingredients from "./ingredients";
 
 const MealContainer = styled.div`
-  border: 1px solid blue;
+  box-shadow: 0 0 10px gray;
+  background: white;
+  width: 40%;
+  margin: 30px auto;
+  display: block;
+
+  @media (max-width: 1027px) {
+    width: 80%;
+  }
 `;
 
 const Title = styled.h2`
-  font-size: 0.9em;
+  font-size: 1.4em;
+  display: inline-block;
+  margin-right: 10px;
 `;
 
 const Image = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 140px;
+  height: 140px;
+  display: block;
+  margin: 10px auto;
 `;
 
 const singleMeal = props => {
@@ -21,9 +33,9 @@ const singleMeal = props => {
   return (
     <MealContainer>
       <Title>{title}</Title>
-      <Image>{thumbnail}</Image>
-      <Ingredients ingredients={ingredients} />
-      <a href={singleMeal.href}>{href}</a>
+      <a href={href}>(Link)</a>
+      <Image alt={title} src={thumbnail} />
+      <Ingredients source="recipe" ingredients={ingredients} />
     </MealContainer>
   );
 };
